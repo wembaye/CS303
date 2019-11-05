@@ -51,4 +51,11 @@ describe("SymbolBalancer", () => {
             assert.isFalse(balancerB.isBalanced("{}[]("));
         });
     });
+
+    describe("isBalanced(delimiters)", () => {
+        it("takes a string with delimiters and returns true if the text has these delimiters balanced", () => {
+            assert.isTrue(balancerA.isBalanced("{}[]()<>"));
+            assert.isFalse(balancerB.isBalanced("{}[]()<"));
+        });
+    });
 });
