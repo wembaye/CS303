@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+
+<script>
+
+
+    function min(array) {
+        if (array.length > 1) {
+            let other = min(array.splice(1));
+            if (other < array[0]) { // break here
+                return other;
+            }
+        }
+        return array[0];
+    }
+    console.log(min([3, 2, 4]));
+</script>
+
+
+
+
+</html>

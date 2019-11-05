@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+
+<script>
+
+    function sumArr(arr) {
+       
+        if (arr.length == 0) {
+           return 0;
+        }
+        else {
+            return arr.pop() + sumArr(arr)
+        }
+    }
+    let arr=[1, 2, 3];
+    alert(sumArr(arr));
+</script>
+
+
+
+
+</html>
